@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NXT.link | One Link to Rule Them All</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <div class="announcement-bar">
+        <p>✨ New analytics features just dropped! Track your link performance like never before.</p>
+    </div>
+
+<header id="main-header">
+  <nav class="main-nav">
+    <a href="index.html" class="logo">NXT<span>.link</span></a>
+
+   
+    <div class="nav-actions">
+      <a href="index.html"  class="nav-link">Home</a>
+      <a href="about.html"  class="nav-link">About</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="#" id="login-btn" class="btn btn-login">Log in</a>
+      <a href="#" class="btn btn-signup signup-trigger">Sign up free</a>
+    </div>
+  </nav>
+</header>
+
+    <main id="main-content">
+        <div class="page-content">
+            <section class="hero">
+                <h1>So, what is NXT?</h1>
+                <h2>One Link to Rule Them All.</h2>
+                <p>Join students and faculty everywhere using NXT.link for their educational journey and career launch. A single link to organize and present your academic projects, while also building a professional portfolio to attract future employers.</p>
+                <form class="claim-form">
+                    <span class="form-prefix">nxt.link/</span>
+                    <input type="text" placeholder="yourname">
+                    <button type="submit">Claim your Next.Link &gt;</button>
+                </form>
+            </section>
+            <section class="stats">
+                <div class="stat-item">
+                    <h3>50M+</h3>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1B+</h3>
+                    <p>Links Clicked</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Uptime</p>
+                </div>
+            </section>
+            <section class="features">
+                <div class="feature-item">
+                    <div class="icon-container">⚡️</div>
+                    <h4>Lightning Fast</h4>
+                    <p>Links load instantly. Keep your audience engaged.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-container">👥</div>
+                    <h4>Trusted</h4>
+                    <p>Join a trusted network of students and professionals.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-container">📊</div>
+                    <h4>Powerful Analytics</h4>
+                    <p>Track views and engagement. Gain useful insights.</p>
+                </div>
+            </section>
+            <section class="partners">
+                <img src="https://www.uwinnipeg.ca/ucollab/images/UW_logo-1.png" alt="The University of Winnipeg" onerror="this.style.display='none'">
+                <img src="https://www.rrc.ca/marketing/assets/rrc-polytech-logo-horizontal-black.png" alt="RRC Polytech" onerror="this.style.display='none'">
+                <img src="https://umanitoba.ca/sites/default/files/2021-01/UM-logo-stacked-black-RGB.png" alt="University of Manitoba" onerror="this.style.display='none'">
+                <img src="https://www.prov.ca/wp-content/uploads/2022/02/prov-logo-wordmark-blue.png" alt="Providence University College" onerror="this.style.display='none'">
+            </section>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a> · 
+    <a href="about.html">About</a> · 
+    <a href="products.html">Products</a> · 
+    <a href="contact.html">Contact</a>
+  </nav>
+  <p>&copy; 2025 NXT.link. All Rights Reserved.</p>
+</footer>
+
+    <!-- Modals -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-logo">NXT<span>.link</span></div>
+            <h2>Join NXT.link</h2>
+            <p class="modal-subtitle">Create your free NXT.link account</p>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="yourname">
+                <small>Your nxt.link will be: nxt.link/yourname</small>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="••••••••••">
+                <button type="submit" class="btn-modal-submit">Create your NXT.link</button>
+            </form>
+            <p class="modal-footer-text">Already have an account? <a href="#">Sign in</a></p>
+        </div>
+    </div>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-logo">NXT<span>.link</span></div>
+            <h2>Log in to your NXT.link</h2>
+            <form>
+                <input type="text" placeholder="nxt.link/ Username">
+                <input type="password" placeholder="Password">
+                <a href="#" class="modal-link">Log in with phone number</a>
+                <button type="submit" class="btn-modal-submit btn-login-submit">Log in</button>
+            </form>
+            <a href="#" class="modal-link">Forgot password?</a>
+            <p class="modal-footer-text">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

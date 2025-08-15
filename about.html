@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | NXT.link</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="main-header">
+  <nav class="main-nav">
+    <a href="index.html" class="logo">NXT<span>.link</span></a>
+
+   
+    <div class="nav-actions">
+      <a href="index.html"  class="nav-link">Home</a>
+      <a href="about.html"  class="nav-link">About</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="#" id="login-btn" class="btn btn-login">Log in</a>
+      <a href="#" class="btn btn-signup signup-trigger">Sign up free</a>
+    </div>
+  </nav>
+</header>
+
+
+    <main id="main-content">
+        <div class="page-content">
+            <section class="hero-about">
+                <h1>Create, Connect, and Succeed.</h1>
+                <p>NXT.link is the simple way to showcase your school work. It's one link that organizes your best projects and gets you ready for your career.</p>
+                <a href="#" class="btn-start-free signup-trigger">Start NXT.link Free &gt;</a>
+            </section>
+            <section class="about-features">
+                <div class="about-feature-item">
+                    <h3>Build Your Portfolio</h3>
+                    <p>Create a page that’s all you. Easily add your best work, showcase your skills, and tell your story.</p>
+                    <ul>
+                        <li>Add links to projects and assignments.</li>
+                        <li>Feature your resume and cover letters.</li>
+                        <li>Customize your page to match your style.</li>
+                    </ul>
+                </div>
+                <div class="about-feature-item">
+                    <h3>Connect with Your Future</h3>
+                    <p>Use your NXT.link to get noticed. Share it with classmates, instructors, and potential employers.</p>
+                    <ul>
+                        <li>Impress recruiters with a clean, professional profile.</li>
+                        <li>Stand out from the crowd in internship applications.</li>
+                        <li>Network with professionals in your field.</li>
+                    </ul>
+                </div>
+                <div class="about-feature-item">
+                    <h3>Grow and Succeed</h3>
+                    <p>See how your portfolio is performing. We give you simple insights to help you make it even better.</p>
+                    <ul>
+                        <li>Track what links get the most views.</li>
+                        <li>See who’s engaging with your work.</li>
+                        <li>Use the data to improve your showcase.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="cta-banner">
+                <h2>Ready to get noticed?</h2>
+                <p>Join students and faculty who are using NXT.link to stand out and present their best work</p>
+                <a href="#" class="signup-trigger">Get Started Free &gt;</a>
+            </section>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a> · 
+    <a href="about.html">About</a> · 
+    <a href="products.html">Products</a> · 
+    <a href="contact.html">Contact</a>
+  </nav>
+  <p>&copy; 2025 NXT.link. All Rights Reserved.</p>
+</footer>
+
+    <!-- Modals -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-logo">NXT<span>.link</span></div>
+            <h2>Join NXT.link</h2>
+            <p class="modal-subtitle">Create your free NXT.link account</p>
+            <form>
+                <label for="username-about">Username</label>
+                <input type="text" id="username-about" placeholder="yourname">
+                <small>Your nxt.link will be: nxt.link/yourname</small>
+                <label for="email-about">Email</label>
+                <input type="email" id="email-about" placeholder="you@example.com">
+                <label for="password-about">Password</label>
+                <input type="password" id="password-about" placeholder="Password">
+                <label for="confirm-password-about">Confirm Password</label>
+                <input type="password" id="confirm-password-about" placeholder="••••••••••">
+                <button type="submit" class="btn-modal-submit">Create your NXT.link</button>
+            </form>
+            <p class="modal-footer-text">Already have an account? <a href="#">Sign in</a></p>
+        </div>
+    </div>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-logo">NXT<span>.link</span></div>
+            <h2>Log in to your NXT.link</h2>
+            <form>
+                <input type="text" placeholder="nxt.link/ Username">
+                <input type="password" placeholder="Password">
+                <a href="#" class="modal-link">Log in with phone number</a>
+                <button type="submit" class="btn-modal-submit btn-login-submit">Log in</button>
+            </form>
+            <a href="#" class="modal-link">Forgot password?</a>
+            <p class="modal-footer-text">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | NXT.link</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="contact.js" defer></script>
+</head>
+<body>
+<header id="main-header">
+  <nav class="main-nav">
+    <a href="index.html" class="logo">NXT<span>.link</span></a>
+    <div class="nav-actions">
+      <a href="index.html"  class="nav-link">Home</a>
+      <a href="about.html"  class="nav-link">About</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="contact.html" class="nav-link" aria-current="page">Contact</a>
+      <a href="#" id="login-btn" class="btn btn-login">Log in</a>
+      <a href="#" class="btn btn-signup signup-trigger">Sign up free</a>
+    </div>
+  </nav>
+</header>
+
+<main class="page-content" id="content">
+  <h1>Contact Us</h1>
+
+  <form id="contact-form" novalidate>
+    <!-- Each field is its own block so order is clear and vertical -->
+    <div class="form-group">
+      <label for="name" style="display:block; margin-bottom:.25rem; font-weight:600;">Name</label>
+      <input type="text" id="name" name="name" autocomplete="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email" style="display:block; margin-bottom:.25rem; font-weight:600;">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone" style="display:block; margin-bottom:.25rem; font-weight:600;">Phone (10 digits)</label>
+      <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" required />
+    </div>
+
+    <div class="form-group">
+      <label for="comments" style="display:block; margin-bottom:.25rem; font-weight:600;">Comments</label>
+      <textarea id="comments" name="comments" rows="5" required></textarea>
+    </div>
+
+    <div id="form-errors" class="visually-hidden" aria-live="polite"></div>
+
+    <div class="form-actions" style="margin-top:1rem;">
+      <button type="submit" class="btn-modal-submit">Submit</button>
+      <button type="reset" class="btn btn-login">Reset</button>
+    </div>
+  </form>
+</main>
+
+<footer id="main-footer">
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="products.html">Products</a> · <a href="contact.html">Contact</a>
+  </nav>
+  <p>&copy; 2025 NXT.link. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

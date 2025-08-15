@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My NXT.link Profile</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <!-- Page-scoped override: make all text black without touching style.css -->
+  <style>
+    .link-bio-body, .link-bio-body * { color: #000 !important; }
+    .social-icons a { color: #000 !important; }
+    .bio-link { color: #000 !important; }
+  </style>
+</head>
+<body class="link-bio-body">
+<header id="main-header">
+  <nav class="main-nav">
+    <a href="index.html" class="logo">NXT<span>.link</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" id="login-btn" class="btn btn-login">Log in</a></li>
+      <li><a href="#" class="btn btn-signup signup-trigger">Sign up</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="link-bio-container">
+    <header class="bio-header">
+      <div class="profile-picture-container">
+        <img src="https://placehold.co/100x100/e0e0e0/777?text=Upload" alt="Profile Picture" id="profile-pic">
+        <input type="file" id="upload-input" accept="image/*" style="display: none;">
+      </div>
+      <h1 class="username" id="profile-username">@username</h1>
+    </header>
+
+    <main class="links-section">
+      <div id="links-container">
+      </div>
+
+      <form id="add-link-form" class="add-link-form">
+        <input type="text" id="link-name" placeholder="Link Name (e.g., GitHub)" required>
+        <input type="url" id="link-url" placeholder="URL (e.g., https://github.com)" required>
+        <button type="submit">Add Link</button>
+      </form>
+    </main>
+
+    <footer class="bio-footer">
+      <div class="footer-logo" ><a href="index.html">NXT.link</a></div>
+    </footer>
+  </div>
+
+  <script src="link-bio.js" defer></script>
+<footer id="main-footer">
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a> · 
+    <a href="about.html">About</a> · 
+    <a href="products.html">Products</a> · 
+    <a href="contact.html">Contact</a>
+  </nav>
+  <p>&copy; 2025 NXT.link. All Rights Reserved.</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
